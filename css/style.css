@@ -1,0 +1,272 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ nav ul a,
+ nav .brand-logo {
+  color: #4a148c;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+  .socialIco{
+    height:30px; 
+    width:30px;
+  }
+  #social{
+    height:30px; 
+    width:30px;
+  }
+}
+
+
+.icon-block {
+  padding: 0 15px;
+}
+.letter{
+  font-family: Arial;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 16pt;
+  line-height: normal;
+  font-size-adjust: none;
+  font-stretch: normal;
+  color: rgb(255, 255, 255);
+  background-color: rgba(252, 115, 35, 1);
+}
+
+footer.page-footer {
+  margin: 0;
+}
+.Parrafo {
+  font-size: 12px;
+}
+.shadowText{
+  text-shadow: black 0 0 0.2em #000000, 0 0 0.2em #2A292D, 0 0 0.2em #57565E;
+}
+.boxTableP{
+  background-color: rgba(230, 81, 0, 0.45);
+    border-right: 1px solid white;
+}
+.boxTable{
+background-color: rgba(255, 207, 181, 0.73);
+  border-right: 1px solid white;
+}
+body{
+ background-color: rgba(233, 245, 244, 1);
+}
+.boxSlide{
+    padding: 3px;
+  border: none;
+  border-radius: 5px;
+  background-color: -webkit-linear-gradient(#F5E4E4, #657173);
+}
+.cintaHead{
+  background: -webkit-linear-gradient(#F5E4E4, #657173);
+}
+.headLogo{
+    max-width: 40%;
+  height: auto;
+}
+
+
+
+
+/** =====================================
+ * Contenedor Principal & Tabla de Precios
+ ========================================*/
+ .pricing-wrapper {
+  width: 960px;
+  margin: 80px auto 20px;
+ }
+
+ .pricing-table {
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+  text-align: center;
+  -moz-box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+ }
+
+ .pricing-table:hover {
+  -webkit-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  -o-transform: scale(1.06);
+  transform: scale(1.06);
+ }
+
+ .pricing-title {
+  
+  background: #e95846;
+  padding: 5px 0;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 2em;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+ }
+
+.pricing-table.recommended .pricing-title, .pricing-table.recommended .primary-action {
+  background: #2db3cb;
+}
+
+.table-price {
+  background: #42403f;
+  padding: 12px 0;
+  font-size: 3em;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  font-weight: 70;
+}
+
+.table-price sup {
+  font-size: 0.2em;
+}
+
+.pricing-list {
+  background: #FFF;
+  color: #42403f;
+}
+
+.pricing-list li {
+  padding: 12px 8px;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.pricing-list li span {
+  font-weight: 400;
+}
+
+
+
+.pricing-list li:before {
+  content: '\f00c';
+  font-family: 'FontAwesome';
+  display: inline-block;
+  color: #3fab91;
+  font-size: 16px;
+  position: relative;
+  right: 6px;
+}
+
+.pricing-list li:nth-child(2n) {
+  background: #F0f0f0;
+}
+
+.table-buy {
+  overflow: hidden;
+  background: #FFF;
+  padding: 15px;
+  text-align: left;
+}
+
+.table-buy p {
+  float: left;
+  color: #2b2727;
+  font-size: 2.4em;
+  font-weight: 700;
+}
+
+.table-buy p sup {
+  font-size: 0.5em;
+}
+
+.pricing-table .primary-action {
+  display: inline-block;
+  float: right;
+  color: #FFF;
+  font-size: 1.4em;
+  font-weight: 700;
+  background: #e95846;
+  padding: 12px 16px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.pricing-table .primary-action:hover {
+  background: #cf4f3e;
+}
+
+.pricing-table.recommended:hover {
+  background: #228799;
+}
+
+/**==========
+ * Responsive
+ ===========*/
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .pricing-wrapper {
+    width: 768px;
+  }
+
+  .pricing-table {
+    width: 236px;
+  }
+
+  .pricing-table li {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pricing-wrapper {
+    width: 420px;
+  } 
+
+  .pricing-table {
+    float: none;
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .pricing-wrapper {
+    width: 300px;
+  }
+}
